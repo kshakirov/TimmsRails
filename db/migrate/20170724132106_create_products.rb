@@ -11,6 +11,9 @@ class CreateProducts < ActiveRecord::Migration
       t.decimal :weight
       t.string :legend_img_filename
       t.jsonb :critical_attributes, null: false, default: '{}'
+      t.decimal :dim_length
+      t.decimal :dim_height
+      t.decimal :dim_width
       t.timestamps null: false
     end
   end
