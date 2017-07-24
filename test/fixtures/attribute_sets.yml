@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Compressor Weel
+  legend_img_filename: cw.img
+
+two:
+  name: Gasket Kit
+  legend_img_filename: gk.img

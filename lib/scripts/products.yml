@@ -1,0 +1,141 @@
+---
+- id: 100
+  manfr_part_num: 702793-0005
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 57253
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 101
+  manfr_part_num: 409095-0067
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 14562
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 102
+  manfr_part_num: 408316-0016
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 16123
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 103
+  manfr_part_num: 451770-0005
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 20122
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 104
+  manfr_part_num: 720584-0003
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 20227
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 105
+  manfr_part_num: 446179-0054
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 11924
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 106
+  manfr_part_num: 431876-0129
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 15902
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 107
+  manfr_part_num: 703890-0132
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 20296
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 108
+  manfr_part_num: 409095-0084
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 20411
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:
+- id: 109
+  manfr_part_num: 409172-040
+  manfr_id: 1
+  part_type_id: 2
+  name:
+  description:
+  inactive: false
+  import_pk: 15999
+  version: 1
+  legend_img_filename:
+  dim_length:
+  dim_width:
+  dim_height:
+  weight:

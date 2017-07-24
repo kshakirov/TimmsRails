@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  manfr_part_num: Product 1
+  name: One
+  description: text
+  attribute_set_id: 1
+  critical_attributes:
+    id: 1
+    desc: 'test'
+
+two:
+  manfr_part_num: Product 2
+  name: MyString
+  description: Description
+  attribute_set_id: 1

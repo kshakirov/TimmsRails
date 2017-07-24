@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: CW RD
+  type_value: decimal
+  attribute_set_id: 980190962
+
+two:
+  name: CW DIA
+  type_value: decimal
+  attribute_set_id: 298486374

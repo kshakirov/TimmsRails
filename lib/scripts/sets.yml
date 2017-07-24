@@ -1,0 +1,302 @@
+---
+- id: 1
+  name: Turbo
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Turbo
+  value: turbo
+  legend_img_filename:
+- id: 2
+  name: Cartridge
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Cartridge
+  value: cartridge
+  legend_img_filename:
+- id: 3
+  name: Kit
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Kit
+  value: kit
+  legend_img_filename:
+- id: 4
+  name: Piston Ring
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Piston Ring
+  value: piston_ring
+  legend_img_filename: 4_ptlgnd_1478123650773.jpg
+- id: 5
+  name: Journal Bearing
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Journal Bearing
+  value: journal_bearing
+  legend_img_filename:
+- id: 6
+  name: Gasket
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Gasket
+  value: gasket
+  legend_img_filename: 6_ptlgnd_1478120255057.jpg
+- id: 8
+  name: Fast Wearing Component
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Fast Wearing Component
+  value: fast_wearing_component
+  legend_img_filename:
+- id: 9
+  name: Major Component
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Major Component
+  value: major_component
+  legend_img_filename:
+- id: 10
+  name: Minor Component
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Minor Component
+  value: minor_component
+  legend_img_filename:
+- id: 11
+  name: Compressor Wheel
+  parent_part_type_id: 9
+  import_pk: 11
+  magento_attribute_set: Compressor Wheel
+  value: compressor_wheel
+  legend_img_filename: 11_ptlgnd_1478122999026.jpg
+- id: 12
+  name: Turbine Wheel
+  parent_part_type_id: 9
+  import_pk: 12
+  magento_attribute_set: Turbine Wheel
+  value: turbine_wheel
+  legend_img_filename: 12_ptlgnd_1478123245962.jpg
+- id: 13
+  name: Bearing Housing
+  parent_part_type_id: 9
+  import_pk: 13
+  magento_attribute_set: Bearing Housing
+  value: bearing_housing
+  legend_img_filename:
+- id: 14
+  name: Backplate / Sealplate
+  parent_part_type_id: 9
+  import_pk: 14
+  magento_attribute_set: Backplate / Sealplate
+  value: backplate_sealplate
+  legend_img_filename: 14_ptlgnd_1478125247361.jpg
+- id: 15
+  name: Heatshield / Shroud
+  parent_part_type_id: 9
+  import_pk: 15
+  magento_attribute_set: Heatshield
+  value: heatshield
+  legend_img_filename: 15_ptlgnd_1478121891821.jpg
+- id: 16
+  name: Nozzle Ring
+  parent_part_type_id: 9
+  import_pk: 16
+  magento_attribute_set: Nozzle Ring
+  value: nozzle_ring
+  legend_img_filename: 16_ptlgnd_1473891647008.jpg
+- id: 17
+  name: O Ring
+  parent_part_type_id: 10
+  import_pk: 50
+  magento_attribute_set: O Ring
+  value: o_ring
+  legend_img_filename: 17_ptlgnd_1473892024291.jpg
+- id: 18
+  name: Oil Deflector
+  parent_part_type_id: 10
+  import_pk: 51
+  magento_attribute_set: Oil Deflector
+  value: oil_deflector
+  legend_img_filename: 18_ptlgnd_1478115113229.jpg
+- id: 19
+  name: Clamp
+  parent_part_type_id: 10
+  import_pk: 52
+  magento_attribute_set: Clamp
+  value: clamp
+  legend_img_filename: 19_ptlgnd_1478100514784.jpg
+- id: 20
+  name: Thrust Parts
+  parent_part_type_id: 10
+  import_pk: 53
+  magento_attribute_set: Thrust Parts
+  value: thrust_parts
+  legend_img_filename:
+- id: 21
+  name: Miscellaneous Minor Components
+  parent_part_type_id: 10
+  import_pk: 54
+  magento_attribute_set: Miscellaneous Minor Components
+  value: misc_minor_components
+  legend_img_filename:
+- id: 30
+  name: Actuator
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Actuator
+  value: actuator
+  legend_img_filename:
+- id: 31
+  name: Compressor Cover
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Compressor Cover
+  value: compressor_cover
+  legend_img_filename:
+- id: 32
+  name: Plug
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Plug
+  value: plug
+  legend_img_filename:
+- id: 33
+  name: Turbine Housing
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Turbine Housing
+  value: turbine_housing
+  legend_img_filename:
+- id: 34
+  name: Backplate
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Backplate
+  value: backplate
+  legend_img_filename: 34_ptlgnd_1478125523833.jpg
+- id: 35
+  name: Bolt - Screw
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Bolt Screw
+  value: bolt_screw
+  legend_img_filename: 35_ptlgnd_1478023491332.jpg
+- id: 36
+  name: Fitting
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Fitting
+  value: fitting
+  legend_img_filename: 36_ptlgnd_1478186467689.jpg
+- id: 37
+  name: Journal Bearing Spacer
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Journal Bearing Spacer
+  value: journal_bearing_spacer
+  legend_img_filename: 37_ptlgnd_1478100831313.jpg
+- id: 38
+  name: Nut
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Nut
+  value: nut
+  legend_img_filename: 38_ptlgnd_1479256221517.jpg
+- id: 39
+  name: Pin
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Pin
+  value: pin
+  legend_img_filename:
+- id: 40
+  name: Retaining Ring
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Retaining Ring
+  value: retaining_ring
+  legend_img_filename: 40_ptlgnd_1478124544053.jpg
+- id: 41
+  name: Seal Plate
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Seal Plate
+  value: seal_plate
+  legend_img_filename: 41_ptlgnd_1478187205320.jpg
+- id: 42
+  name: Spring
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Spring
+  value: spring
+  legend_img_filename:
+- id: 43
+  name: Thrust Bearing
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Thrust Bearing
+  value: thrust_bearing
+  legend_img_filename:
+- id: 44
+  name: Thrust Collar
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Thrust Collar
+  value: thrust_collar
+  legend_img_filename: 44_ptlgnd_1478101728592.jpg
+- id: 45
+  name: Thrust Spacer
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Thrust Spacer
+  value: thrust_spacer
+  legend_img_filename: 45_ptlgnd_1478107227367.jpg
+- id: 46
+  name: Thrust Washer
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Thrust Washer
+  value: thrust_washer
+  legend_img_filename: 46_ptlgnd_1473892181232.jpg
+- id: 47
+  name: Washer
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Washer
+  value: washer
+  legend_img_filename: 47_ptlgnd_1473892208174.jpg
+- id: 48
+  name: Carbon Seal
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Carbon Seal
+  value: carbon_seal
+  legend_img_filename: 48_ptlgnd_1473891874716.jpg
+- id: 49
+  name: Gasket Kit
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set: Gasket Kit
+  value: gasket_kit
+  legend_img_filename:
+- id: 50
+  name: Misc
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set:
+  value: misc
+  legend_img_filename:
+- id: 51
+  name: Part
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set:
+  value: p
+  legend_img_filename:
+- id: 52
+  name: Shroud
+  parent_part_type_id:
+  import_pk:
+  magento_attribute_set:
+  value: shroud
+  legend_img_filename:

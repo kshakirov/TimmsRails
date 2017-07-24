@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   resources :attribute_sets
   resources :attributes
   # The priority is based upon order of creation: first created -> highest priority.
