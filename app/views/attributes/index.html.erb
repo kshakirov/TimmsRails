@@ -11,7 +11,7 @@
       <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>Type value</th>
+        <th>Data Type</th>
         <th>Attribute set</th>
         <th colspan="3"></th>
       </tr>
@@ -22,7 +22,7 @@
           <tr>
             <td><%= attribute.id %></td>
             <td><%=  link_to attribute.name, edit_attribute_path(attribute) %></td>
-            <td><%= attribute.type_value %></td>
+            <td><%= attribute.data_type %></td>
             <td><%= attribute.attribute_set_id %></td>
           </tr>
       <% end %>

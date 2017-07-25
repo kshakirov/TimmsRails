@@ -69,6 +69,13 @@ class AttributesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def attribute_params
-      params.require(:attribute).permit(:id, :name, :type_value, :string, :attribute_set_id, :integer)
+      params.require(:attribute).permit(:id,
+                                        :name,
+                                        :data_type,
+                                        :attribute_set_id, :null_allowed, :max_val, :json_name,
+                                        :unit, :tolerance,:json_name, :idx_name,:min_val,
+                                        :regex, :parent_id, :length, :scale, :length, :length_web,
+                                        :scale_web,:is_critical_dimension, :seq_num, :tolerance,
+                                        :null_display)
     end
 end

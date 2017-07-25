@@ -11,12 +11,74 @@
     </div>
   <% end %>
 
-    <%@attribute.attributes.each  do |key,value|%>
-        <div class="form-group">
-          <%= f.label key.to_sym %><br>
-          <%= f.text_field key.to_sym,  :class => 'form-control' %>
-        </div>
-    <%end%>
+
+
+
+
+    <div class="form-group">
+      <%= f.label :name %><br>
+      <%= f.text_field :name,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :data_type %><br>
+      <%= f.text_field :data_type,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :idx_name %><br>
+      <%= f.text_field :idx_name ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :scale %><br>
+      <%= f.number_field :scale ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :scale_web %><br>
+      <%= f.number_field :scale_web ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :tolerance %><br>
+      <%= f.number_field :tolerance ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :length %><br>
+      <%= f.number_field :length ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :length_web %><br>
+      <%= f.number_field :length_web ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :unit %><br>
+      <%= f.text_field :unit ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :seq_num %><br>
+      <%= f.number_field :seq_num ,  :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :null_allowed %><br>
+      <%= f.check_box :null_allowed ,  :class => 'form-check-input' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :null_display %><br>
+      <%= f.check_box :null_display ,  :class => 'form-check-input' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :is_critical_dimension %><br>
+      <%= f.check_box :is_critical_dimension ,  :class => 'form-check-input' %>
+    </div>
 
 
   <div class="actions">
