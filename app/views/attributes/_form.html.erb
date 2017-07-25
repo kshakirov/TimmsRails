@@ -12,9 +12,6 @@
   <% end %>
 
 
-
-
-
     <div class="form-group">
       <%= f.label :name %><br>
       <%= f.text_field :name,  :class => 'form-control' %>
@@ -23,6 +20,10 @@
     <div class="form-group">
       <%= f.label :data_type %><br>
       <%= f.text_field :data_type,  :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+    <%=f.select  :attribute_set_id,
+                 options_from_collection_for_select(@attribute_sets, "id", "name", :selected => @attribute.attribute_set_id), {}, :class => 'form-control selectpicker'%>
     </div>
 
     <div class="form-group">

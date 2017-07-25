@@ -1,9 +1,32 @@
 <div class="row">
-<div class="col-lg-6 col-lg-offset-3">
-  <h4>Editing Attribute Set</h4>
-<%= render 'form' %>
+  <div class="col-lg-6 col-lg-offset-3">
+    <h4>Edit Attribute Set</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-5 col-lg-offset-1 ">
+    <%= render 'form' %>
 
-<%= link_to 'Show', @attribute_set %> |
-<%= link_to 'Back', attribute_sets_path %>
+    <%= link_to 'Show', @attribute_set %> |
+    <%= link_to 'Back', attribute_sets_path %>
+  </div>
+  <div class="col-lg-5">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>
+          Attributes
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @attribute_set.attr.each do |a| %>
+          <tr>
+            <td><%= link_to  a.name, edit_attribute_path %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
-</div>
+

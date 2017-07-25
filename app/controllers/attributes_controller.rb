@@ -19,6 +19,7 @@ class AttributesController < ApplicationController
 
   # GET /attributes/1/edit
   def edit
+    @attribute_sets = AttributeSet.all
   end
 
   # POST /attributes
@@ -76,6 +77,6 @@ class AttributesController < ApplicationController
                                         :unit, :tolerance,:json_name, :idx_name,:min_val,
                                         :regex, :parent_id, :length, :scale, :length, :length_web,
                                         :scale_web,:is_critical_dimension, :seq_num, :tolerance,
-                                        :null_display)
+                                        :null_display, :attribute_set_id)
     end
 end
