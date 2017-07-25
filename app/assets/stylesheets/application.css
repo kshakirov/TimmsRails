@@ -13,5 +13,6 @@
  *= require_tree .
  *= require bootstrap-theme.min.css
  *= require bootstrap.min.css
+ *= require pagination.css
  *= require_self
  */

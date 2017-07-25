@@ -1,31 +1,41 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-lg-2 col-lg-offset-4">
+    <h4>Attribute Sets</h4>
 
-<h1>Listing Attribute Sets</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Legend img filename</th>
-      <th>String</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @attribute_sets.each do |attribute_set| %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <table class="table">
+      <thead>
       <tr>
-        <td><%= attribute_set.name %></td>
-        <td><%= attribute_set.legend_img_filename %></td>
-        <td><%= attribute_set.string %></td>
-        <td><%= link_to 'Show', attribute_set %></td>
-        <td><%= link_to 'Edit', edit_attribute_set_path(attribute_set) %></td>
-        <td><%= link_to 'Destroy', attribute_set, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Legend img filename</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+      </thead>
 
-<br>
+      <tbody>
+      <% @attribute_sets.each do |attribute_set| %>
+          <tr>
+            <td><%= link_to attribute_set.name, edit_attribute_set_path(attribute_set) %></td>
+            <td><%= attribute_set.legend_img_filename %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Attribute set', new_attribute_set_path %>
+    <br>
+
+    <%= link_to 'New Attribute set', new_attribute_set_path %>
+    <div class="digg_pagination">
+      <div class="page_info">
+        <%= page_entries_info @attribute_sets %>
+      </div>
+      <%= will_paginate @attribute_sets, :container => false %>
+    </div>
+  </div>
+</div>
+  </div>
+</div>

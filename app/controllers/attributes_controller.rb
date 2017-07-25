@@ -4,7 +4,7 @@ class AttributesController < ApplicationController
   # GET /attributes
   # GET /attributes.json
   def index
-    @attributes = Attribute.all
+    @attributes = Attribute.paginate(:page => params[:page])
   end
 
   # GET /attributes/1

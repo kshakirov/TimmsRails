@@ -4,8 +4,7 @@ class AttributeSetsController < ApplicationController
   # GET /attribute_sets
   # GET /attribute_sets.json
   def index
-    @attribute_sets = AttributeSet.all
-    render json: @attribute_sets
+    @attribute_sets = AttributeSet.paginate(:page => params[:page])
   end
 
   # GET /attribute_sets/1
