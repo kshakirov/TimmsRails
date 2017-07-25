@@ -5,11 +5,13 @@ class AttributeSetsController < ApplicationController
   # GET /attribute_sets.json
   def index
     @attribute_sets = AttributeSet.all
+    render json: @attribute_sets
   end
 
   # GET /attribute_sets/1
   # GET /attribute_sets/1.json
   def show
+    render json: @attribute_set
   end
 
   # GET /attribute_sets/new

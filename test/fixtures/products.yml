@@ -8,6 +8,9 @@ one:
   critical_attributes:
     id: 1
     desc: 'test'
+  turbo_type:
+    - "str 1"
+    - "str 2"
 
 two:
   manfr_part_num: Product 2
