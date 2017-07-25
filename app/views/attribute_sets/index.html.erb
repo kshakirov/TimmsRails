@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Attribute Sets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Legend img filename</th>
+      <th>String</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attribute_sets.each do |attribute_set| %>
+      <tr>
+        <td><%= attribute_set.name %></td>
+        <td><%= attribute_set.legend_img_filename %></td>
+        <td><%= attribute_set.string %></td>
+        <td><%= link_to 'Show', attribute_set %></td>
+        <td><%= link_to 'Edit', edit_attribute_set_path(attribute_set) %></td>
+        <td><%= link_to 'Destroy', attribute_set, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Attribute set', new_attribute_set_path %>

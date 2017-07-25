@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @attribute_set.name %>
+</p>
+
+<p>
+  <strong>Legend img filename:</strong>
+  <%= @attribute_set.legend_img_filename %>
+</p>
+
+
+<%= link_to 'Edit', edit_attribute_set_path(@attribute_set) %> |
+<%= link_to 'Back', attribute_sets_path %>

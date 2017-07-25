@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @attribute.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @attribute.name %>
+</p>
+
+<p>
+  <strong>Type value:</strong>
+  <%= @attribute.type_value %>
+</p>
+
+<p>
+
+
+<p>
+  <strong>Attribute set:</strong>
+  <%= @attribute.attribute_set_id %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_attribute_path(@attribute) %> |
+<%= link_to 'Back', attributes_path %>

@@ -1,0 +1,28 @@
+<%= form_for(@attribute_set) do |f| %>
+  <% if @attribute_set.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@attribute_set.errors.count, "error") %> prohibited this attribute_set from being saved:</h2>
+
+      <ul>
+      <% @attribute_set.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+    <%@attribute_set.attributes.each  do |key,value|%>
+        <div class="form-group">
+          <label for="<%=key%>"><%=key%></label>
+          <input type="text" name="attribute_set[<%=key%>]" class="form-control" id="<%=key%>" value="<%=value%>">
+        </div>
+    <%end%>
+
+
+
+  <div class="actions">
+    <%= f.submit :class => 'btn btn-primary' %>
+  </div>
+<% end %>
