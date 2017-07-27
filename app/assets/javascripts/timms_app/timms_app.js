@@ -19,6 +19,12 @@ timmsApp.controller("ProductEditController", function ($rootScope, $scope, $http
         })
     }
 
+    function _get_interchanges(product_sku) {
+        return $http.get('http://graphservice.localhost/interchange/' + product_sku).then(function (promise) {
+            return promise.data;
+        })
+    }
+
 
     $scope.init = function () {
         var product_sku = $location.absUrl().split('products/')[1].split('/edit')[0];
@@ -32,9 +38,15 @@ timmsApp.controller("ProductEditController", function ($rootScope, $scope, $http
             $scope.where_useds = where_useds;
         })
 
+        _get_interchanges(product_sku).then(function (interchanges) {
+            console.log(interchanges);
+            $scope.interchanges = interchanges.parts;
+        })
+
         return _get_product_data(product_sku).then(function (product_data) {
                 $scope.product = product_data.product;
                 $scope.attributes = product_data.attributes;
+                $scope.partType = product_data.partType;
         })
 
     }

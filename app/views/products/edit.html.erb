@@ -1,7 +1,6 @@
 <div ng-controller=" ProductEditController" ng-init="init()">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
-
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#part_details">Part Details</a></li>
         <li><a data-toggle="tab" href="#critical_dimensions">Critical Dimensions</a></li>
@@ -29,6 +28,10 @@
             <tr>
               <td> Name</td>
               <td> {{product.name}}</td>
+            </tr>
+            <tr>
+              <td> PartType</td>
+              <td> {{partType}}</td>
             </tr>
             <tr>
               <td> Description</td>
@@ -67,50 +70,71 @@
             </tr>
           </table>
         </div>
-      <div id="where_used" class="tab-pane fade" style="min-height: 200px">
+        <div id="where_used" class="tab-pane fade" style="min-height: 200px">
+          <table class="table">
+            <tr ng-repeat="wu in where_useds">
+              <td>
+                {{wu.id}}
+              </td>
+              <td>
+                <a ng-href="/products/{{wu.partId}}/edit">{{wu.partNumber}}</a>
+              </td>
+              <td>
+                {{wu.manufacturerName}}
+              </td>
+              <td>
+                {{wu.partTypeName}}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h4>Interchanges</h4>
         <table class="table">
-          <tr ng-repeat="wu in where_useds">
+          <tr ng-repeat="interchange in interchanges">
             <td>
-              {{wu.id}}
+              {{interchange.id}}
             </td>
             <td>
-              <a ng-href="/products/{{bom.child.id}}/edit">{{wu.partNumber}}</a>
+              <a ng-href="/products/{{interchange.id}}/edit">{{interchange.manufacturerPartNumber}}</a>
             </td>
             <td>
-              {{wu.manufacturerName}}
+              {{interchange.manufacturer.name}}
             </td>
             <td>
-              {{wu.partTypeName}}
+              {{interchange.partType.name}}
             </td>
           </tr>
         </table>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h4>Bill Of Materials</h4>
-      <table class="table">
-        <tr ng-repeat="bom in boms">
-          <td>
-            {{bom.child.id}}
-          </td>
-          <td>
-            <a ng-href="/products/{{bom.child.id}}/edit">{{bom.child.manufacturerPartNumber}}</a>
-          </td>
-          <td>
-            {{bom.child.name}}
-          </td>
-          <td>
-            {{bom.child.type}}
-          </td>
-        </tr>
-      </table>
+
     </div>
 
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h4>Bill Of Materials</h4>
+        <table class="table">
+          <tr ng-repeat="bom in boms">
+            <td>
+              {{bom.child.id}}
+            </td>
+            <td>
+              <a ng-href="/products/{{bom.child.id}}/edit">{{bom.child.manufacturerPartNumber}}</a>
+            </td>
+            <td>
+              {{bom.child.name}}
+            </td>
+            <td>
+              {{bom.child.type}}
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
   </div>
-
-
 </div>
-
-

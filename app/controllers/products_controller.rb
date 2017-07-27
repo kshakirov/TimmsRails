@@ -15,7 +15,8 @@ class ProductsController < ApplicationController
      @attributes = @product.attribute_set.attr
     render :json =>{
         product:  @product,
-        attributes: @attributes
+        attributes: @attributes,
+        partType: @product.attribute_set.name
     }
   end
 
