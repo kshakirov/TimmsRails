@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap.min.js
+//= require angular.js
+//= require timms_app/timms_app.js
 //= require_tree .

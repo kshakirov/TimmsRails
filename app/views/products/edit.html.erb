@@ -1,6 +1,116 @@
-<h1>Editing Product</h1>
+<div ng-controller=" ProductEditController" ng-init="init()">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
 
-<%= render 'form' %>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#part_details">Part Details</a></li>
+        <li><a data-toggle="tab" href="#critical_dimensions">Critical Dimensions</a></li>
+        <li><a data-toggle="tab" href="#turbo_types">Turbo Types</a></li>
+        <li><a data-toggle="tab" href="#where_used">Where Used</a></li>
+      </ul>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+      <div class="tab-content">
+        <div id="part_details" class="tab-pane fade in active" style="min-height: 200px">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>
+                Property
+              </th>
+              <th>
+                Value
+              </th>
+            </tr>
+            </thead>
+            <tr>
+              <td> Manufacture Part Number</td>
+              <td> {{product.manfr_part_num}}</td>
+            </tr>
+            <tr>
+              <td> Name</td>
+              <td> {{product.name}}</td>
+            </tr>
+            <tr>
+              <td> Description</td>
+              <td> {{product.description}}</td>
+            </tr>
+          </table>
+        </div>
+        <div id="critical_dimensions" class="tab-pane fade" style="min-height: 200px">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>
+                Name
+              </th>
+              <th>
+                Value
+              </th>
+            </tr>
+            </thead>
+            <tr ng-repeat="attribute in attributes">
+              <td>
+                {{attribute.name}}
+              </td>
+              <td>
+                {{product.critical_attributes[attribute.idx_name]}}
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="turbo_types" class="tab-pane fade" style="min-height: 200px">
+          <table>
+            <tr ng-repeat="t_type in product.turbo_type">
+              <td>
+                {{t_type}}
+              </td>
+            </tr>
+          </table>
+        </div>
+      <div id="where_used" class="tab-pane fade" style="min-height: 200px">
+        <table class="table">
+          <tr ng-repeat="wu in where_useds">
+            <td>
+              {{wu.id}}
+            </td>
+            <td>
+              <a ng-href="/products/{{bom.child.id}}/edit">{{wu.partNumber}}</a>
+            </td>
+            <td>
+              {{wu.manufacturerName}}
+            </td>
+            <td>
+              {{wu.partTypeName}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h4>Bill Of Materials</h4>
+      <table class="table">
+        <tr ng-repeat="bom in boms">
+          <td>
+            {{bom.child.id}}
+          </td>
+          <td>
+            <a ng-href="/products/{{bom.child.id}}/edit">{{bom.child.manufacturerPartNumber}}</a>
+          </td>
+          <td>
+            {{bom.child.name}}
+          </td>
+          <td>
+            {{bom.child.type}}
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+
+</div>
+
+
