@@ -1,0 +1,33 @@
+<!--<table class="table">-->
+    <!--<tr ng-repeat="wu in where_useds">-->
+        <!--<td>-->
+            <!--{{wu.id}}-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--<a ng-href="/products/{{wu.partId}}/edit">{{wu.partNumber}}</a>-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--{{wu.manufacturerName}}-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--{{wu.partTypeName}}-->
+        <!--</td>-->
+    <!--</tr>-->
+<!--</table>-->
+
+<table  ng-table="wuTableParams" class="table" show-filter="true">
+    <tr ng-repeat="wu in $data">
+        <td title="'Id'" filter="{ partId: 'number'}" sortable="'partId'">
+            {{wu.partId}}
+        </td>
+        <td title="'Part Number'" filter="{ partNumber: 'text'}" sortable="'partNumber'">
+            <a ng-href="/products/{{wu.partId}}/edit">{{wu.partNumber}}</a>
+        </td>
+        <td title="'Manufacturer'" filter="{ manufacturerName: 'text'}" sortable="'manufacturerName'">
+            {{wu.manufacturerName}}
+        </td>
+        <td title="'Part Type'" filter="{ partTypeName: 'text'}" sortable="'partTypeName'">
+            {{wu.partTypeName}}
+        </td>
+    </tr>
+</table>

@@ -70,71 +70,19 @@
             </tr>
           </table>
         </div>
-        <div id="where_used" class="tab-pane fade" style="min-height: 200px">
-          <table class="table">
-            <tr ng-repeat="wu in where_useds">
-              <td>
-                {{wu.id}}
-              </td>
-              <td>
-                <a ng-href="/products/{{wu.partId}}/edit">{{wu.partNumber}}</a>
-              </td>
-              <td>
-                {{wu.manufacturerName}}
-              </td>
-              <td>
-                {{wu.partTypeName}}
-              </td>
-            </tr>
-          </table>
+        <div id="where_used" class="tab-pane fade" style="min-height: 200px" ng-include="'/templates/where_used.html'">
+
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h4>Interchanges</h4>
-        <table class="table">
-          <tr ng-repeat="interchange in interchanges">
-            <td>
-              {{interchange.id}}
-            </td>
-            <td>
-              <a ng-href="/products/{{interchange.id}}/edit">{{interchange.manufacturerPartNumber}}</a>
-            </td>
-            <td>
-              {{interchange.manufacturer.name}}
-            </td>
-            <td>
-              {{interchange.partType.name}}
-            </td>
-          </tr>
-        </table>
-      </div>
+    <div class="row" ng-include="'/templates/interchanges.html'">
 
     </div>
 
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h4>Bill Of Materials</h4>
-        <table class="table">
-          <tr ng-repeat="bom in boms">
-            <td>
-              {{bom.child.id}}
-            </td>
-            <td>
-              <a ng-href="/products/{{bom.child.id}}/edit">{{bom.child.manufacturerPartNumber}}</a>
-            </td>
-            <td>
-              {{bom.child.name}}
-            </td>
-            <td>
-              {{bom.child.type}}
-            </td>
-          </tr>
-        </table>
-      </div>
+    <div class="row" ng-include="'/templates/bom.html'">
 
-    </div>
+
   </div>
+</div>
 </div>

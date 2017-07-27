@@ -14,5 +14,6 @@
  *= require bootstrap-theme.min.css
  *= require bootstrap.min.css
  *= require pagination.css
+ *= require ng-table.css
  *= require_self
  */

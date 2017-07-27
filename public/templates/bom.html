@@ -1,0 +1,21 @@
+<div class="col-lg-8 col-lg-offset-2">
+    <h4>Bill Of Materials</h4>
+     <table  ng-table="bomTableParams" class="table" show-filter="true">
+        <tr ng-repeat="bom in $data">
+            <td title="'Id'" filter="{ id: 'number'}" sortable="'id'">
+                {{bom.child.id}}
+            </td>
+            <td title="'Part Number'" filter="{ manufacturerPartNumber: 'text'}" sortable="'manufacturerPartNumber'">
+                <a ng-href="/products/{{bom.child.id}}/edit">{{bom.child.manufacturerPartNumber}}</a>
+            </td>
+            <td title="'Name'">
+              {{bom.child.name}}
+            </td>
+            <td title="'Type'">
+                {{bom.child.type}}
+            </td>
+        </tr>
+    </table>
+
+</div>
+</div>

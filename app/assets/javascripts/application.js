@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min.js
-//= require angular.js
+//= require bower_components/angular/angular.js
+//= require bower_components/ng-table-bundle/ng-table.js
 //= require timms_app/timms_app.js
 //= require_tree .

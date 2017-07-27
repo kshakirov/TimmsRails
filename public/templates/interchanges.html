@@ -1,0 +1,19 @@
+<div class="col-lg-8 col-lg-offset-2">
+    <h4>Interchanges</h4>
+    <table  ng-table="interchangeTableParams" class="table" show-filter="true">
+        <tr ng-repeat="interchange in $data">
+            <td title="'Id'" filter="{ id: 'number'}" sortable="'id'">
+                {{interchange.id}}
+            </td>
+            <td title="'Part Number'" filter="{ manufacturerPartNumber: 'text'}" sortable="'manufacturerPartNumber'">
+                <a ng-href="/products/{{interchange.id}}/edit">{{interchange.manufacturerPartNumber}}</a>
+            </td>
+            <td title="'Manufacturer'">
+                {{interchange.manufacturer.name}}
+            </td>
+            <td title="'Part Type'">
+                {{interchange.partType.name}}
+            </td>
+        </tr>
+    </table>
+</div>
