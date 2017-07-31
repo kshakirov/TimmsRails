@@ -5,7 +5,15 @@ class ProductsController < ApplicationController
   # GET /products.json
 
   def index
-    @products = Product.paginate(:page => params[:page])
+    if not  params[:entity_name].nil?
+      @products = Product.where(manfr_part_num:  params[:entity_name]).paginate(:page => params[:page])
+    else
+      @products = Product.paginate(:page => params[:page])
+    end
+
+  end
+
+  def search
   end
 
   # GET /products/1

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :manufacturers
   resources :products
   resources :attribute_sets
   resources :attributes
